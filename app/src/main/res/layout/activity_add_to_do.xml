@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?><android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Add_to_do">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:text="What is to be done?"
+        android:padding="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/add_task_title"
+        android:hint="Enter Task Title"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <EditText
+        android:id="@+id/add_task_description"
+        android:hint="Enter Task Description"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <TextView
+            android:padding="12dp"
+            android:layout_marginTop="8dp"
+            android:text="Due Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/add_task_date"
+        android:hint="Enter Task Date"
+        android:clickable="true"
+        android:focusable="false"
+        android:onClick="Open_Date_Dialog"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/add_task_time"
+        android:hint="Enter Task Time"
+        android:clickable="true"
+        android:focusable="false"
+        android:onClick="Open_Time_Dialog"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="24dp"
+            android:text="Choose Category        "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:layout_marginTop="24dp"
+            android:id="@+id/spinner"
+            android:entries="@array/category_array"
+            android:prompt="@string/category_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Spinner>
+    </LinearLayout>
+
+
+
+
+
+
+    <Button
+        android:layout_marginTop="24dp"
+        android:id="@+id/Done"
+        android:text="Done"
+        android:onClick="add_todo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

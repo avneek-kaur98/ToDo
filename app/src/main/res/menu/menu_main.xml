@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.todo.MainActivity">
+    <item
+        android:id="@+id/message_permission"
+        android:orderInCategory="100"
+        android:title="Message permission"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/sort"
+        android:title="Sort ToDos">
+        <menu>
+            <item android:id="@+id/Title" android:title="By Title"></item>
+            <item android:id="@+id/Date" android:title="By Date"></item>
+            <item android:id="@+id/Time" android:title="By Time"></item>
+        </menu>
+    </item>
+
+    <item android:title="Send Feedback" android:id="@+id/feedback"></item>
+
+    <item android:id="@+id/category" android:title="Category" app:showAsAction="always">
+        <menu>
+            <item android:id="@+id/default1" android:title="Default">Default</item>
+            <item android:id="@+id/Personal" android:title="Personal">Personal</item>
+            <item android:id="@+id/Shopping" android:title="Shopping">Shopping</item>
+            <item android:id="@+id/Wishlist" android:title="Wishlist">Wishlist</item>
+            <item android:id="@+id/Work" android:title="Work">Work</item>
+        </menu>
+    </item>
+    <item android:id="@+id/aboutUs" android:title="About Us"></item>
+</menu>
